@@ -4,7 +4,7 @@
 # Copyright (C) 2021 https://github.com/ophub/kernel
 #==========================================================================
 
-name: Compile beta kernel
+name: build-5-15-189
 
 on:
   repository_dispatch:
