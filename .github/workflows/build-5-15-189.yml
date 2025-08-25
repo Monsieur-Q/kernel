@@ -170,8 +170,8 @@ jobs:
 
       - name: Put custom meson-gx-mmc.c
         run: |
-          mkdir -p compile-kernel/source/drivers/mmc/host
-          cp -f /path/to/your/meson-gx-mmc.c compile-kernel/source/drivers/mmc/host/
+          mkdir -p /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/compile-kernel/source/drivers/mmc/host
+          cp -f kernel-patch/source/drivers/mmc/host/meson-gx-mmc.c /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/compile-kernel/source/drivers/mmc/host/
 
       - name: Compile the kernel [ ${{ inputs.kernel_version }} ]
         uses: ophub/amlogic-s9xxx-armbian@main
